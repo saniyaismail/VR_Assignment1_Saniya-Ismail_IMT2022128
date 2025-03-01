@@ -47,7 +47,23 @@ Only contours with circularity between **0.7 and 1.2** are considered valid coin
 
 ### Output Files:
 - `output/segmented_coin_1.jpg` to `output/segmented_coin_17.jpg`
-
+![Alt Text](partA/output/segmented_coin_1.jpg)
+![Alt Text](partA/output/segmented_coin_2.jpg)
+![Alt Text](partA/output/segmented_coin_3.jpg)
+![Alt Text](partA/output/segmented_coin_4.jpg)
+![Alt Text](partA/output/segmented_coin_5.jpg)
+![Alt Text](partA/output/segmented_coin_6.jpg)
+![Alt Text](partA/output/segmented_coin_7.jpg)
+![Alt Text](partA/output/segmented_coin_8.jpg)
+![Alt Text](partA/output/segmented_coin_9.jpg)
+![Alt Text](partA/output/segmented_coin_10.jpg)
+![Alt Text](partA/output/segmented_coin_11.jpg)
+![Alt Text](partA/output/segmented_coin_12.jpg)
+![Alt Text](partA/output/segmented_coin_13.jpg)
+![Alt Text](partA/output/segmented_coin_14.jpg)
+![Alt Text](partA/output/segmented_coin_15.jpg)
+![Alt Text](partA/output/segmented_coin_16.jpg)
+![Alt Text](partA/output/segmented_coin_17.jpg)
 ---
 
 ## 4. Coin Counting
