@@ -38,7 +38,7 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 Only contours with circularity between **0.7 and 1.2** are considered valid coins.
 
 ![Alt Text](partA/output/threshold.jpg)
-![Alt Text](partA/detected_coins.jpg)
+![Alt Text](partA/output/detected_coins.jpg)
 
 ---
 
