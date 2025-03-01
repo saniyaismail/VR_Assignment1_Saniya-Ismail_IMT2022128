@@ -139,7 +139,7 @@ Image: `output/keypoints_left.jpg`, `output/keypoints_middle.jpg`, `output/keypo
 - After processing all images with the above steps, the final **stitched panorama** was generated.
 
 ### **Final Stitched Panorama**
-![Alt Text](partB/output/output/panorama.jpg)
+![Alt Text](partB/output/panorama.jpg)
 Image: `output/panorama.jpg`
 
 
