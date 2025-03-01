@@ -58,5 +58,4 @@ Only contours with circularity between **0.7 and 1.2** are considered valid coin
 
 ## Observations:
 
-- The method works well for detecting and segmenting coins that are **not overlapping**.
-- In cases of **significant overlap**, some coins may be merged as a single object.
+- In cases where there is **uneven lighting**, some coins may not be detected properly due to inconsistent contour detection.
