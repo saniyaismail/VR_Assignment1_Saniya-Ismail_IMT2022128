@@ -1,8 +1,8 @@
 # VR_Assignment1_Saniya-Ismail_IMT2022128
 
-#Part A - Coin Detection
+# Part A - Coin Detection
 
-# Coin Detection
+- cd partA 
 
 ## Input Image
 
@@ -53,3 +53,10 @@ Only contours with circularity between **0.7 and 1.2** are considered valid coin
 ## 4. Coin Counting
 
 - The total number of coins detected is 17
+
+---
+
+## Observations:
+
+- The method works well for detecting and segmenting coins that are **not overlapping**.
+- In cases of **significant overlap**, some coins may be merged as a single object.
