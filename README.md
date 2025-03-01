@@ -49,7 +49,7 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 - **Circular Contour Filtering:** Contours are filtered based on circularity and area constraints to detect coins accurately.
   
 ![Alt Text](partA/output/detected_coins.jpg)
-image : `output/detected_coins.jpg`
+- Image : `output/detected_coins.jpg`
 
 ---
 
@@ -97,9 +97,11 @@ python3 panorama.py
 ## **The following images were stitched to create a panorama:**
 
 ![Alt Text](partB/images/left.jpeg)
+- Images: `images/left.jpeg`
 ![Alt Text](partB/images/middle.jpeg)
+- Images: `images/middle.jpeg`
 ![Alt Text](partB/images/right.jpeg)
-Images: `images/left.jpeg`, `images/middle.jpeg`, and `images/right.jpeg`
+- Images: `images/right.jpeg`
 
 The code can be found at `panorama_stitching.py`. On running the Python script, it reads 3 overlapping input images from the `images/` directory and writes the following files as an output to the `output/` directory:
 
@@ -118,9 +120,11 @@ The code can be found at `panorama_stitching.py`. On running the Python script, 
 
 ### **Keypoint Matches on Each Image**
 ![Alt Text](partB/output/keypoints_left.jpg)
+- Image: `output/keypoints_left.jpg`
 ![Alt Text](partB/output/keypoints_middle.jpg)
+- Image: `output/keypoints_middle.jpg`
 ![Alt Text](partB/output/keypoints_right.jpg)
-Image: `output/keypoints_left.jpg`, `output/keypoints_middle.jpg`, `output/keypoints_right.jpg`
+- Image: `output/keypoints_right.jpg`
 
 ---
 
@@ -148,7 +152,7 @@ Image: `output/keypoints_left.jpg`, `output/keypoints_middle.jpg`, `output/keypo
 
 ### **Final Stitched Panorama**
 ![Alt Text](partB/output/panorama.jpg)
-Image: `output/panorama.jpg`
+- Image: `output/panorama.jpg`
 
 
 ## Observations:
