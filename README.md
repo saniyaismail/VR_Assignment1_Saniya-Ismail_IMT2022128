@@ -88,9 +88,9 @@ python3 panorama.py
 
 ## **The following images were stitched to create a panorama:**
 
-![Alt Text](partB/images/left.jpeg`)
-![Alt Text](partB/images/middle.jpeg`)
-![Alt Text](partB/images/right.jpeg`)
+![Alt Text](`partB/images/left.jpeg`)
+![Alt Text](`partB/images/middle.jpeg`)
+![Alt Text](`partB/images/right.jpeg`)
 Images: `images/left.jpeg`, `images/middle.jpeg`, and `images/right.jpeg`
 
 The code can be found at `panorama_stitching.py`. On running the Python script, it reads 3 overlapping input images from the `images/` directory and writes the following files as an output to the `output/` directory:
@@ -109,9 +109,9 @@ The code can be found at `panorama_stitching.py`. On running the Python script, 
 - If fewer than **4 feature matches** were found, homography computation was not performed.
 
 ### **Keypoint Matches on Each Image**
-![Alt Text](partB/output/keypoints_left.jpg`)
-![Alt Text](partB/output/keypoints_middle.jpg`)
-![Alt Text](partB/output/keypoints_right.jpg`)
+![Alt Text](`partB/output/keypoints_left.jpg`)
+![Alt Text](`partB/output/keypoints_middle.jpg`)
+![Alt Text](`partB/output/keypoints_right.jpg`)
 Image: `output/keypoints_left.jpg`, `output/keypoints_middle.jpg`, `output/keypoints_right.jpg`
 
 ---
@@ -139,7 +139,7 @@ Image: `output/keypoints_left.jpg`, `output/keypoints_middle.jpg`, `output/keypo
 - After processing all images with the above steps, the final **stitched panorama** was generated.
 
 ### **Final Stitched Panorama**
-![Alt Text](partB/output/output/panorama.jpg``)
+![Alt Text](`partB/output/output/panorama.jpg`)
 Image: `output/panorama.jpg`
 
 
