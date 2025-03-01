@@ -23,7 +23,7 @@ python3 detecting_coins.py
 
 ## Input Image
 ![Alt Text](partA/images/coins.jpeg)
-**Path:** `images/coins.jpeg`
+- Image : `images/coins.jpeg`
 
 The code can be found at `coin_detection.py`. On running the Python script, it reads the input image from `images/coins.jpeg` and writes the following files as an output to the `output` directory:
 
@@ -40,7 +40,7 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 - **Gaussian Blurring:** `cv2.GaussianBlur` is applied to remove noise and smoothen the image.
 - **Adaptive Thresholding:** `cv2.adaptiveThreshold` is used to binarize the image, making object detection easier.
 ![Alt Text](partA/output/threshold.jpg)
-- Image : `output/threshold.jpg`
+ `output/threshold.jpg`
 ---
 
 ## 2. Edge Detection and Contour Filtering
