@@ -30,13 +30,6 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 - `cv2.findContours` is used to identify object boundaries in the binary image.
 - **Circular Contour Filtering:** Contours are filtered based on circularity and area constraints to detect coins accurately.
 
-### Formula Used:
-**Circularity**  
-\[
-\text{Circularity} = \frac{4\pi \times \text{Area}}{\text{Perimeter}^2}
-\]  
-Only contours with circularity between **0.7 and 1.2** are considered valid coins.
-
 ![Alt Text](partA/output/threshold.jpg)
 ![Alt Text](partA/output/detected_coins.jpg)
 
