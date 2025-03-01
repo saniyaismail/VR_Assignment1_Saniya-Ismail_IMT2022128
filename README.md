@@ -1,9 +1,9 @@
 # VR_Assignment1_Saniya-Ismail_IMT2022128
 
-overview :
-This assignment consists of two parts 
-- coin detection, segementation and counting
-- stitching images to create panorama
+## Overview  
+This assignment consists of two parts:  
+1. **Coin Detection, Segmentation, and Counting**  
+2. **Stitching Images to Create a Panorama**  
 
 ### Setup Instructions  
 ```bash
