@@ -5,15 +5,21 @@ This assignment consists of two parts
 - coin detection, segementation and counting
 - stitching images to create panorama
 
-  git clone https://github.com/saniyaismail/VR_Assignment1_Saniya-Ismail_IMT2022128.git
-  cd VR_Assignment1_Saniya-Ismail_IMT2022128
-  pip install opencv-python numpy matplotlib
+### Setup Instructions  
+```bash
+git clone https://github.com/saniyaismail/VR_Assignment1_Saniya-Ismail_IMT2022128.git
+cd VR_Assignment1_Saniya-Ismail_IMT2022128
+pip install opencv-python numpy matplotlib
+```
 
 # Part A - Coin Detection
 
-running the code
+### Running the code 
+```bash
 cd partA
 python3 detecting_coins.py
+```
+
 
 ## Input Image
 ![Alt Text](partA/images/coins.jpeg)
@@ -34,7 +40,7 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 - **Gaussian Blurring:** `cv2.GaussianBlur` is applied to remove noise and smoothen the image.
 - **Adaptive Thresholding:** `cv2.adaptiveThreshold` is used to binarize the image, making object detection easier.
 ![Alt Text](partA/output/threshold.jpg)
-image : `output/threshold.jpg`
+- Image : `output/threshold.jpg`
 ---
 
 ## 2. Edge Detection and Contour Filtering
@@ -82,9 +88,11 @@ image : `output/detected_coins.jpg`
 ---
 # Part B - Image Stitching
 
-running the code 
+### Running the code
+``` bash
 cd partB
 python3 panorama.py
+```
 
 ## **The following images were stitched to create a panorama:**
 
@@ -145,4 +153,6 @@ Image: `output/panorama.jpg`
 
 ## Observations:
 
-- In cases where there is **uneven lighting**, some coins may not be detected properly due to inconsistent contour detection.
+- Detected the number of coins accurately.
+- In cases where there is uneven lighting, some coins may not be detected properly due to inconsistent contour detection.
+- Image stitching accuracy depends on the number of keypoints detected and matched between images.
