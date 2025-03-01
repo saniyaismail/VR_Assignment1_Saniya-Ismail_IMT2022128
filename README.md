@@ -5,7 +5,7 @@
 - cd partA 
 
 ## Input Image
-
+![Alt Text](partA/images/coins.jpeg)
 **Path:** `images/coins.jpeg`
 
 The code can be found at `coin_detection.py`. On running the Python script, it reads the input image from `images/coins.jpeg` and writes the following files as an output to the `output` directory:
