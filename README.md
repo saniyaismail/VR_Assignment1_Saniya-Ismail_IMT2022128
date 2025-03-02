@@ -157,4 +157,5 @@ The code can be found at `panorama_stitching.py`. On running the Python script, 
 
 - Detected the number of coins accurately.
 - In cases where there is uneven lighting, some coins may not be detected properly due to inconsistent contour detection.
+- With sufficient overlap between the images we could obtain the desired panorama. 
 - Image stitching accuracy depends on the number of keypoints detected and matched between images.
