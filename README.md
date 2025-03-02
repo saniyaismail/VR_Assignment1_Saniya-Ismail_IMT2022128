@@ -45,8 +45,8 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 
 ## 2. Edge Detection and Contour Filtering
 
-- Canny edge detection `cv2.Canny` was tested with different threshold values to identify coin boundaries. Morphological operations like closing `cv2.morphologyEx` with `cv2.MORPH_CLOSE` improved edge connectivity but the result was not that great. 
-- Used `cv2.adaptiveThreshold` to enhance coin visibility while suppressing the background. Contours were extracted using `cv2.findContours` and filtered based on circularity (0.7 < circularity < 1.2). This method successfully detected and segmented the coins with higher accuracy
+- Canny edge detection `cv2.Canny` was tested with different threshold values to identify coin boundaries. Morphological operations like closing `cv2.morphologyEx` with `cv2.MORPH_CLOSE` improved edge connectivity but the result were not that great. 
+- Finally, used `cv2.adaptiveThreshold` to enhance coin visibility while suppressing the background. Contours were extracted using `cv2.findContours` and filtered based on circularity (0.7 < circularity < 1.2). This method successfully detected and segmented the coins with higher accuracy
   
 ![Alt Text](partA/output/detected_coins.jpg)
 - Image : `output/detected_coins.jpg`
