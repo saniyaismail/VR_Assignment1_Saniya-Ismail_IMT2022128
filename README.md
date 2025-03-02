@@ -35,10 +35,10 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 
 ## 1. Image Preprocessing
 
-- **Resizing:** The image is resized while maintaining aspect ratio to ensure efficient processing.
-- **Grayscale Conversion:** `cv2.cvtColor` is used to convert the image to grayscale.
-- **Gaussian Blurring:** `cv2.GaussianBlur` is applied to remove noise and smoothen the image.
-- **Adaptive Thresholding:** `cv2.adaptiveThreshold` is used to binarize the image, making object detection easier.
+- **Resizing:** Initially tried resizing the image to a fixed dimension, but it distorted the aspect ratio. Instead, resizing while maintaining aspect ratio worked better for efficient processing.
+- **Grayscale Conversion:** Converting the image to grayscale using `cv2.cvtColor` was essential for reducing complexity and improving contrast.
+- **Gaussian Blurring:** Applied `cv2.GaussianBlur` to smooth the image and reduce noise. A kernel size of (5,5) worked well, as larger values blurred the edges too much, affecting detection.
+- **Adaptive Thresholding:** Tested global thresholding `cv2.threshold` but it struggled with uneven lighting. `cv2.adaptiveThreshold` performed better by dynamically adjusting thresholds based on local regions, leading to clearer object separation.
 ![Alt Text](partA/output/threshold.jpg)
 - Image : `output/threshold.jpg`
 ---
@@ -117,6 +117,7 @@ The code can be found at `panorama_stitching.py`. On running the Python script, 
 - **Brute Force Matcher (BFMatcher)** - `cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)` was used for keypoint matching.
 - Keypoints were extracted from each image and matched.
 - If fewer than **4 feature matches** were found, homography computation was not performed.
+- Tried SIFT + FLANN-Based Matcher, but it did not work well due to incorrect matches and slower performance.
 
 ### **Keypoint Matches on Each Image**
 ![Alt Text](partB/output/keypoints_left.jpg)
