@@ -139,8 +139,7 @@ The code can be found at `panorama_stitching.py`. On running the Python script, 
 - The **middle image** was used as the reference image.
 - The **right image** was first stitched with the middle image.
 - The **left image** was then stitched into the stitched image of the middle and right images.
-- **Perspective transformation** was applied using `cv2.warpPerspective()`. Using the cv2.INTER_CUBIC flag (bicubic interpolation) instead of cv2.INTER_LINEAR improved the smoothness of edges and alignment of features after warping. It considers a 4×4 neighborhood of pixels to estimate new pixel values.
-
+- **Perspective transformation** was applied using `cv2.warpPerspective()`.
 ---
 
 ## **4. Blending Images**
