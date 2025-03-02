@@ -45,8 +45,8 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 
 ## 2. Edge Detection and Contour Filtering
 
-- `cv2.findContours` is used to identify object boundaries in the binary image.
-- **Circular Contour Filtering:** Contours are filtered based on circularity and area constraints to detect coins accurately.
+- Canny edge detection `cv2.Canny` was tested with different threshold values to identify coin boundaries. Morphological operations like closing `cv2.morphologyEx` with `cv2.MORPH_CLOSE` improved edge connectivity but the result was not that great. 
+- Used `cv2.adaptiveThreshold` to enhance coin visibility while suppressing the background. Contours were extracted using `cv2.findContours` and filtered based on circularity (0.7 < circularity < 1.2). This method successfully detected and segmented the coins with higher accuracy
   
 ![Alt Text](partA/output/detected_coins.jpg)
 - Image : `output/detected_coins.jpg`
@@ -54,10 +54,9 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 ---
 
 ## 3. Coin Segmentation
+- Initially, `cv2.boundingRect` was used to extract rectangular regions, but this included background pixels around the coins, making segmentation less precise. To refine the extraction, circular masks were generated using `cv2.drawContours` isolating only the coin regions. However, in some cases, partial contours led to incomplete masks, resulting in cropped or missing parts of the coins.
 
-- **Bounding Boxes:** `cv2.boundingRect` is used to extract rectangular regions containing coins.
-- **Masking:** A mask is created for each segmented coin to extract only the relevant portion.
-- **Saving Individual Coins:** Each segmented coin is saved separately.
+- The most effective approach combined `cv2.boundingRect` for defining the region of interest and `cv2.bitwise_and` to apply the mask, ensuring only the coin was extracted while removing unwanted background. This method preserved the circular shape of the coins, improving segmentation accuracy.
 
 ### Output Files:
 - `output/segmented_coin_1.jpg` to `output/segmented_coin_17.jpg`
@@ -83,7 +82,7 @@ The code can be found at `coin_detection.py`. On running the Python script, it r
 
 ## 4. Coin Counting
 
-- The total number of coins detected is 17
+- The final count of detected coins was 17, which matched with the expected result.
 
 ---
 # Part B - Image Stitching
