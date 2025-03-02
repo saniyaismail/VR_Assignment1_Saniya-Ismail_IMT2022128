@@ -118,7 +118,7 @@ The code can be found at `panorama_stitching.py`. On running the Python script, 
 - If fewer than **4 feature matches** were found, homography computation was not performed.
 - Tried SIFT + FLANN-Based Matcher, but it did not work well due to incorrect matches and slower performance.
 
-### **Keypoint Matches on Each Image**
+### **Keypoints in Each Image**
 ![Alt Text](partB/output/keypoints_left.jpg)
 - Image: `output/keypoints_left.jpg`
 ![Alt Text](partB/output/keypoints_middle.jpg)
